@@ -56,6 +56,14 @@ https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii
   - RMSE = 1112.38
 #### Visualizing Feature Importance:
 ![image](https://github.com/Glutt0n/Project-1/assets/118066797/09236545-eb1b-47db-9c5c-31fe6c2fa1a4)
+#### Summary Plot (bar)
+![image](https://github.com/Glutt0n/Project-1/assets/118066797/2f0f064f-d501-41fd-8443-c95460d52272)
+Our previously created feature importance plot shares the top 4 most important features with our new summary bar-plot. This doesn't quiet tell us any details on how the features positively or negatively influence our model's prediction.
+
+#### Summary Plot (dot)
+![image](https://github.com/Glutt0n/Project-1/assets/118066797/9d7f4c36-3263-4323-9490-f576d96e0df7)
+Item_MRP is shown to have the highest impact on model output with higher MRP equating to increased sales (and lower MRP having the opposite effect). The same case goes for instances of Supermarket Type 3. We see the opposite in the case of instances of Grocery Stores and increased Item_Visibility. The larger the values of those features, the lower the impact on sales.
+
 
 Although the Decision Tree is the better model of the two, taking into account metrics, I wouldn't use this to predict sales for another sales prediction-related business problem. The MSE for both the training and test splits is ridiculous. And that's on top of having a mediocre R² score. Not a very predictive model at all.
 ## Recommendations:

@@ -1,5 +1,5 @@
 # Predicting Sales with ML models
-## LinearRegression vs. DecisionTree
+## LinearRegression vs. DecisionTree vs. RandomForest
 
 **Author**:Leard Russell 
 
@@ -63,9 +63,24 @@ Our previously created feature importance plot shares the top 4 most important f
 #### Summary Plot (dot)
 ![image](https://github.com/Glutt0n/Project-1/assets/118066797/9d7f4c36-3263-4323-9490-f576d96e0df7)
 Item_MRP is shown to have the highest impact on model output with higher MRP equating to increased sales (and lower MRP having the opposite effect). The same case goes for instances of Supermarket Type 3. We see the opposite in the case of instances of Grocery Stores and increased Item_Visibility. The larger the values of those features, the lower the impact on sales.
+#### Force Plots:
+Max Item_MRP:
+![image](https://github.com/Glutt0n/Project-1/assets/118066797/40aa0b62-c7d8-4297-943f-c147dfd4597e)
+In the row holding the highest Item MRP, the force plot shows Item_MRP unsurprisingly to be the feature with the highest impact on our outcome.
 
+Min Item_MRP:
+![image](https://github.com/Glutt0n/Project-1/assets/118066797/8f018c72-26c4-4635-ab8d-c346b83bc765)
+Again, like the previously shown force plot the Item_MRP has the largest affect on our model's prediction. 
 
-Although the Decision Tree is the better model of the two, taking into account metrics, I wouldn't use this to predict sales for another sales prediction-related business problem. The MSE for both the training and test splits is ridiculous. And that's on top of having a mediocre R² score. Not a very predictive model at all.
+#### Lime Explanations: 
+Max Item_MRP:
+![image](https://github.com/Glutt0n/Project-1/assets/118066797/517e1563-8770-4b1e-b2f8-9be688775cc7)
+The row with the highest Item MRP is actually shown by the lime explainer to have the Item MRP to be the second most impactful on our randomforest's prediction among all features used in the row. Grocery Stores have the highest impact with Supermarket Type3 outlets following Item MRP. 
+Min Item_MRP:
+![image](https://github.com/Glutt0n/Project-1/assets/118066797/c32535f5-b35b-4a2d-944f-7c104ef606dc)
+Like the previously explained row with the highest Item MRP, the row with the minimum Item MRP is actually shown by the lime explainer to have Item_MRP to be the second most impactful among all features used in the row, with the Grocery Store Outlet Type being the most impactful and the Supermarket Type3 Outlet Type being the third most impactful.
+
+Although the Decision Tree is the better model of the three, taking into account metrics, I wouldn't use this to predict sales for another sales prediction-related business problem. The MSE for both the training and test splits is ridiculous. And that's on top of having a mediocre R² score. Not a very predictive model at all.
 ## Recommendations:
 
 Overall, I would recommend the use of the decision tree model. This regressor had a higher R² score for both splits than our linear regressor did (both before and after tuning). The decision tree also had better metrics across the board. It isn't a perfectly fit model by any means, but it is definitely better than the linear model.

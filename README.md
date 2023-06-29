@@ -6,7 +6,7 @@
 ### Business problem:
 
 Can we predict future sales when given info on:
-Item Fat Content, 'Item Visibility', 'Item Type', 'Item MRP', 'Outlet Establishment Year', 'Outlet Size', 'Outlet Location Type', 'Outlet Type', and 'Item Outlet Sales'. 
+'Item Fat Content', 'Item Visibility', 'Item Type', 'Item MRP', 'Outlet Establishment Year', 'Outlet Size', 'Outlet Location Type', 'Outlet Type', and 'Item Outlet Sales'. 
 
 ### Data:
 https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/ 
@@ -25,6 +25,7 @@ https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii
   - MAE = 847.536
   - MSE = 1300544.784
   - RMSE = 1140.414
+    
 • Results for test data:
   - R² = 0.566
   - MAE = 805.335
@@ -42,6 +43,7 @@ https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii
   - MAE = 762.584
   - MSE = 1172164.969
   - RMSE = 1082.666
+    
 • Results for test data:
   - R² = 0.595
   - MAE = 738.338
@@ -51,6 +53,8 @@ https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii
 • Results for training data:
   - R² = 0.94
   - RMSE = 431.98
+
+    
 • Results for test data:
   - R² = 0.55
   - RMSE = 1112.38
